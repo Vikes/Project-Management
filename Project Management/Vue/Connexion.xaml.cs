@@ -10,19 +10,23 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Project_Management
+namespace Project_Management.Vue
 {
     /// <summary>
-    /// Logique d'interaction pour MainWindow.xaml
+    /// Logique d'interaction pour Connexion.xaml
     /// </summary>
-    public partial class Accueil : Window
+    public partial class Connexion : Window
     {
-        public Accueil()
+        public Connexion()
         {
             InitializeComponent();
+        }
+
+        private void Valider_OnClick(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

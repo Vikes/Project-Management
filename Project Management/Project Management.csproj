@@ -55,6 +55,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Model\Entite\Utilisateur.cs" />
+    <Compile Include="SettingBinding.cs" />
+    <Compile Include="Vue\Connexion.xaml.cs">
+      <DependentUpon>Connexion.xaml</DependentUpon>
+    </Compile>
     <Page Include="Vue\Accueil.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -63,10 +68,25 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Model\Entite\Client.cs" />
+    <Compile Include="Model\Entite\Commande d%27achat.cs" />
+    <Compile Include="Model\Entite\Compte.cs" />
+    <Compile Include="Model\Produit\Element.cs" />
+    <Compile Include="Model\Facture\Facture Client.cs" />
+    <Compile Include="Model\Facture\Facture Oblige.cs" />
+    <Compile Include="Model\Facture\Facture.cs" />
+    <Compile Include="Model\Entite\Fournisseur.cs" />
+    <Compile Include="Model\Entite\Oblige.cs" />
+    <Compile Include="Model\Produit\Produit.cs" />
+    <Compile Include="Model\Produit\Service.cs" />
     <Compile Include="Vue\Accueil.xaml.cs">
       <DependentUpon>Accueil.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Vue\Connexion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -100,7 +120,6 @@
   <ItemGroup>
     <Folder Include="Controlleur\" />
     <Folder Include="DB\" />
-    <Folder Include="Model\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
